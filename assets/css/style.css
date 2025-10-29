@@ -1,0 +1,65 @@
+/* Banner shown on homepage */
+.home-banner {
+    height: 60vh;
+    background: url('/assets/images/gremlins.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Homepage countdown timer styles */
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.countdown-item {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+}
+
+.countdown-item+.countdown-item {
+    margin-left: -25px;
+}
+
+@media (max-width: 768px) {
+    .countdown-item {
+        width: 120px;
+    }
+
+    .countdown-item+.countdown-item {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-item {
+        width: 100px;
+    }
+
+    .countdown-item+.countdown-item {
+        margin-left: -15px;
+    }
+}
+
+.circle-days {
+    background: rgba(74, 144, 226, .25);
+    color: #2f80ed;
+}
+
+.circle-hours {
+    background: rgba(255, 99, 132, .25);
+    color: #e91e63;
+}
+
+.circle-minutes {
+    background: rgba(76, 175, 80, .25);
+    color: #2e7d32;
+}
+
+.circle-seconds {
+    background: rgba(255, 152, 0, .25);
+    color: #ef6c00;
+}
