@@ -18,62 +18,67 @@
 <body data-bs-theme="light">
     <div class="container">
         <!-- Navbar -->
-        <nav
-            class="navbar navbar-expand-lg bg-body-clear border-bottom d-flex flex-wrap justify-content-center mb-4 border-bottom">
-            <div class="container-fluid gx-5">
-                <!-- Navbar logo -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container-fluid px-1">
+                <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="70"
+                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="60"
                         id="navBarLogo">
                 </a>
-                <!-- Mobile Dropdown Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler border-0 rounded-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Navbar page links -->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="about.html">About</a>
-                        <a class="nav-link" href="information.html">Information</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                        <a class="nav-link" href="shop.html">Shop</a>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-uppercase fw-semibold">
+                        <a class="nav-link active position-relative mx-2" href="index.html">Home</a>
+                        <a class="nav-link position-relative mx-2" href="about.html">About</a>
+                        <a class="nav-link position-relative mx-2" href="information.html">Information</a>
+                        <a class="nav-link position-relative mx-2" href="contact.html">Contact</a>
+                        <a class="nav-link position-relative mx-2" href="shop.html">Shop</a>
                     </div>
+
                     <!-- Donate button -->
-                    <div class="d-flex align-items-center">
-                        <a href="donate.html" class="btn btn-primary shadow">
-                            Donate
-                        </a>
-                    </div>
+                    <a href="donate.html" class="btn btn-primary shadow-sm rounded-0 ms-lg-4">
+                        Donate
+                    </a>
                 </div>
             </div>
         </nav>
     </div>
 
+    <!-- Colored underline bar -->
+    <div class="navbar-accent"></div>
+
+
 
     <!-- Banner -->
-    <header class="hero-section min-vh-75 d-flex align-items-center text-white position-relative">
+    <header class="hero-section d-flex align-items-center text-white position-relative">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-7 col-xl-6">
-                    <h1 class="display-4 fw-bold mb-3">Bridgwater Guy Fawkes Carnival</h1>
-                    <p class="lead mb-4">
-                        Join thousands on the streets of Bridgwater for illuminated carts, performers, and fireworks.
+                    <h1 class="display-3 fw-bold mb-3">Bridgwater Guy Fawkes Carnival</h1>
+                    <p class="mb-4">
+                        Join thousands on the streets of Bridgwater for illuminated carts, performers, and
+                        fireworks.
                     </p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="#countdown" class="btn btn-primary btn-lg shadow">
+                        <a href="#countdown" class="btn btn-primary btn-lg shadow rounded-0">
                             <i class="bi bi-stopwatch me-2"></i>See the countdown
                         </a>
-                        <a href="information.html" class="btn btn-outline-light btn-lg">
+                        <a href="information.html" class="btn btn-outline-light btn-lg rounded-0">
                             <i class="bi bi-info-circle me-2"></i>Event information
                         </a>
                     </div>
                     <div class="d-flex align-items-center gap-3 mt-4">
                         <div class="d-flex align-items-center small opacity-75">
                             <i class="bi bi-calendar2-week me-2"></i>
-                            Next parade: 1 Nov 2025
+                            Next parade: 7th Nov 2026
                         </div>
                         <div class="vr d-none d-md-block opacity-25"></div>
                         <div class="d-flex align-items-center small opacity-75">
@@ -89,18 +94,16 @@
 
     <div class="container">
 
-        <!-- Begin page content here-->
-
-        <!-- Text section -->
+        <!-- Begin page content here section -->
         <div class="container py-4 mt-4 border-top text-center">
             <!-- Text and countdown -->
             <div class="mb-4">
                 <h3 class="display-5">Seeing is believing</h3>
                 <p>
-                    2025 parade starts in...
+                    Parade starts in...
                 </p>
                 <!-- Parade Countdown -->
-                <div class="countdown-wrapper pb-4" data-countdown data-target="2025-11-01T18:00:00">
+                <div class="countdown-wrapper pb-4" data-countdown data-target="2026-11-07T18:00:00">
                     <div
                         class="countdown-item circle-days d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="days">00</div>
@@ -116,13 +119,13 @@
                     <div
                         class="countdown-item circle-minutes d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="minutes">00</div>
-                        <small class="fw-semibold">Min</small>
+                        <small class="fw-semibold">Mins</small>
                     </div>
 
                     <div
                         class="countdown-item circle-seconds d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="seconds">00</div>
-                        <small class="fw-semibold">Sec</small>
+                        <small class="fw-semibold">Secs</small>
                     </div>
                 </div>
 

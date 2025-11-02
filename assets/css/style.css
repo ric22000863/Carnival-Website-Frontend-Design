@@ -1,17 +1,48 @@
-/* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 350;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+/* Navbar styles */
+.navbar-accent {
+    height: 10px;
+    background: rgb(74, 145, 226);
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(74, 145, 226);
+    transition: width 0.3s;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .navbar .nav-link {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
 }
 
 /* Banner shown on homepage */
-.home-banner {
-    height: 60vh;
-    background: url('/assets/images/gremlins.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
+.hero-section {
+    background:
+        linear-gradient(rgba(7, 14, 30, 0.65), rgba(7, 14, 30, 0.65)),
+        url("/assets/images/Ramblers2025.jpg") center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    height: 90vh;
 }
 
 /* Homepage countdown timer styles */
@@ -70,15 +101,4 @@ body {
 .circle-seconds {
     background: rgba(255, 152, 0, .25);
     color: #ef6c00;
-}
-
-
-
-/* Hero */
-.hero-section {
-    background:
-        linear-gradient(rgba(7, 14, 30, 0.65), rgba(7, 14, 30, 0.65)),
-        url("/assets/images/gremlins.jpg") center/cover no-repeat;
-    color: #fff;
-    position: relative;
 }
