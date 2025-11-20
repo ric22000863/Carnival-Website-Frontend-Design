@@ -22,7 +22,7 @@
             <div class="container-fluid px-1">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="60"
+                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="50"
                         id="navBarLogo">
                 </a>
 
@@ -35,18 +35,48 @@
 
                 <!-- Links -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-uppercase fw-semibold">
-                        <a class="nav-link active position-relative mx-2" href="index.html">Home</a>
-                        <a class="nav-link position-relative mx-2" href="about.html">About</a>
-                        <a class="nav-link position-relative mx-2" href="information.html">Information</a>
-                        <a class="nav-link position-relative mx-2" href="contact.html">Contact</a>
-                        <a class="nav-link position-relative mx-2" href="shop.html">Shop</a>
-                    </div>
+                    <ul class="navbar-nav text-uppercase fw-semibold align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative mx-2" href="index.html">
+                                Home <span class="nav-underline"></span>
+                            </a>
+                        </li>
 
-                    <!-- Donate button -->
-                    <a href="donate.html" class="btn btn-primary shadow-sm rounded-0 ms-lg-4">
-                        Donate
-                    </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle position-relative mx-2" href="about.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About <span class="nav-underline"></span>
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0">
+                                <li><a class="dropdown-item" href="#">Event</a></li>
+                                <li><a class="dropdown-item" href="#">Committee</a></li>
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link position-relative mx-2" href="information.html">
+                                Information <span class="nav-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative mx-2" href="contact.html">
+                                Contact <span class="nav-underline"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative mx-2" href="shop.html">
+                                Shop <span class="nav-underline"></span>
+                            </a>
+                        </li>
+                        <!-- Basket button -->
+                        <li class="nav-item border-start ps-2">
+                            <a class="btn btn-primary rounded-0 position-relative mx-2" href="basket.html">
+                                <i class="bi bi-basket3-fill me-2"></i>
+                                Basket
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -55,41 +85,55 @@
     <!-- Colored underline bar -->
     <div class="navbar-accent"></div>
 
-
-
     <!-- Banner -->
     <header class="hero-section d-flex align-items-center text-white position-relative">
         <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-xl-6">
-                    <h1 class="display-3 fw-bold mb-3">Bridgwater Guy Fawkes Carnival</h1>
-                    <p class="mb-4">
-                        Join thousands on the streets of Bridgwater for illuminated carts, performers, and
-                        fireworks.
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8 text-center mx-auto">
+
+                    <!-- Big headline -->
+                    <h1 class="display-1 fw-bold lh-1 mb-3">
+                        Bridgwater Guy Fawkes Carnival
+                    </h1>
+
+                    <!-- Subcopy -->
+                    <p class="lead mb-4">
+                        Join thousands on the streets of Bridgwater for illuminated carts, performers, and fireworks.
                     </p>
-                    <div class="d-flex flex-wrap gap-3">
+
+                    <!-- Small “pills” row -->
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
+                            <i class="bi bi-calendar2-week me-2"></i> 7 Nov 2026
+                        </span>
+                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
+                            <i class="bi bi-geo-alt me-2"></i> Bridgwater, Somerset
+                        </span>
+                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
+                            <i class="bi bi-stars me-2"></i> Since 1881
+                        </span>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
                         <a href="#countdown" class="btn btn-primary btn-lg shadow rounded-0">
-                            <i class="bi bi-stopwatch me-2"></i>See the countdown
+                            <i class="bi bi-stopwatch me-2"></i> See the countdown
                         </a>
                         <a href="information.html" class="btn btn-outline-light btn-lg rounded-0">
-                            <i class="bi bi-info-circle me-2"></i>Event information
+                            <i class="bi bi-info-circle me-2"></i> Event information
                         </a>
                     </div>
-                    <div class="d-flex align-items-center gap-3 mt-4">
-                        <div class="d-flex align-items-center small opacity-75">
-                            <i class="bi bi-calendar2-week me-2"></i>
-                            Next parade: 7th Nov 2026
-                        </div>
-                        <div class="vr d-none d-md-block opacity-25"></div>
-                        <div class="d-flex align-items-center small opacity-75">
-                            <i class="bi bi-geo-alt me-2"></i>
-                            Bridgwater, Somerset
-                        </div>
+
+                    <!-- Bottom light stats row -->
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4 small">
+                        <span><i class="bi bi-people me-2"></i>100k+ spectators</span>
+                        <span class="vr d-none d-md-block"></span>
+                        <span><i class="bi bi-lightning-charge me-2"></i>Illuminated procession</span>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </header>
 
     <div class="container">
@@ -103,27 +147,24 @@
                     Parade starts in...
                 </p>
                 <!-- Parade Countdown -->
-                <div class="countdown-wrapper pb-4" data-countdown data-target="2026-11-07T18:00:00">
-                    <div
-                        class="countdown-item circle-days d-flex flex-column justify-content-center align-items-center text-center">
+                <div id="countdown" class="countdown-wrapper pb-4 d-flex justify-content-center overflow-auto"
+                    data-countdown data-target="2026-11-07T18:00:00">
+                    <div class="countdown-item d-grid bg-primary bg-opacity-25 text-primary text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="days">00</div>
                         <small class="fw-semibold">Days</small>
                     </div>
 
-                    <div
-                        class="countdown-item circle-hours d-flex flex-column justify-content-center align-items-center text-center">
+                    <div class="countdown-item d-grid bg-danger bg-opacity-25 text-danger text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="hours">00</div>
                         <small class="fw-semibold">Hrs</small>
                     </div>
 
-                    <div
-                        class="countdown-item circle-minutes d-flex flex-column justify-content-center align-items-center text-center">
+                    <div class="countdown-item d-grid bg-success bg-opacity-25 text-success text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="minutes">00</div>
                         <small class="fw-semibold">Mins</small>
                     </div>
 
-                    <div
-                        class="countdown-item circle-seconds d-flex flex-column justify-content-center align-items-center text-center">
+                    <div class="countdown-item d-grid bg-warning bg-opacity-25 text-warning text-center">
                         <div class="countdown-number display-5 fw-bold" data-unit="seconds">00</div>
                         <small class="fw-semibold">Secs</small>
                     </div>
@@ -136,19 +177,19 @@
                     </div>
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-3">
                         <li class="ms-3"><a class="text-body-secondary" href="https://x.com/BCarnival"><i
-                                    class="bi bi-twitter-x" style="font-size: 24px;"></i></a></li>
+                                    class="bi bi-twitter-x fs-4"></i></a></li>
                         <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.facebook.com/BridgwaterGuyFawkesCarnival/"><i class="bi bi-facebook"
-                                    style="font-size: 24px;"></i></a></li>
+                                href="https://www.facebook.com/BridgwaterGuyFawkesCarnival/"><i
+                                    class="bi bi-facebook fs-4"></i></a></li>
                         <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.instagram.com/bridgwatercarnival/"><i class="bi bi-instagram"
-                                    style="font-size: 24px;"></i></a></li>
+                                href="https://www.instagram.com/bridgwatercarnival/"><i
+                                    class="bi bi-instagram fs-4"></i></a></li>
                         <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.tiktok.com/@bridgwater_carnival"><i class="bi bi-tiktok"
-                                    style="font-size: 24px;"></i></a></li>
+                                href="https://www.tiktok.com/@bridgwater_carnival"><i class="bi bi-tiktok fs-4"></i></a>
+                        </li>
                         <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.youtube.com/user/BGFCarnival/"><i class="bi bi-youtube"
-                                    style="font-size: 24px;"></i></a></li>
+                                href="https://www.youtube.com/user/BGFCarnival/"><i class="bi bi-youtube fs-4"></i></a>
+                        </li>
                     </ul>
                 </footer>
 

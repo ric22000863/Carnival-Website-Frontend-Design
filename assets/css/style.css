@@ -1,62 +1,47 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
 body {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
 }
 
 /* Navbar styles */
 .navbar-accent {
-    height: 10px;
+    height: 6px;
     background: rgb(74, 145, 226);
 }
 
-.navbar .nav-link::after {
-    content: "";
+.nav-underline {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 2px;
     width: 0;
+    height: 2px;
     background: rgb(74, 145, 226);
-    transition: width 0.3s;
+    transition: width 0.3s ease;
 }
 
-.navbar .nav-link:hover::after,
-.navbar .nav-link.active::after {
+.nav-link:hover .nav-underline,
+.nav-link.active .nav-underline {
     width: 100%;
 }
 
-@media (max-width: 992px) {
-    .navbar .nav-link {
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-}
-
-/* Banner shown on homepage */
+/* Hero banner on homepage */
 .hero-section {
     background:
         linear-gradient(rgba(7, 14, 30, 0.65), rgba(7, 14, 30, 0.65)),
         url("/assets/images/Ramblers2025.jpg") center/cover no-repeat;
-    color: #fff;
-    position: relative;
     height: 90vh;
 }
 
-/* Homepage countdown timer styles */
-.countdown-wrapper {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-}
-
+/* Countdown on homepage */
 .countdown-item {
     width: 150px;
     aspect-ratio: 1;
     border-radius: 50%;
     display: grid;
+    place-content: center;
+    text-align: center;
 }
 
 .countdown-item+.countdown-item {
@@ -81,24 +66,4 @@ body {
     .countdown-item+.countdown-item {
         margin-left: -15px;
     }
-}
-
-.circle-days {
-    background: rgba(74, 144, 226, .25);
-    color: #2f80ed;
-}
-
-.circle-hours {
-    background: rgba(255, 99, 132, .25);
-    color: #e91e63;
-}
-
-.circle-minutes {
-    background: rgba(76, 175, 80, .25);
-    color: #2e7d32;
-}
-
-.circle-seconds {
-    background: rgba(255, 152, 0, .25);
-    color: #ef6c00;
 }
