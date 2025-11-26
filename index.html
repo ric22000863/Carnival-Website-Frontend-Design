@@ -86,51 +86,56 @@
     <div class="navbar-accent"></div>
 
     <!-- Banner -->
-    <header class="hero-section d-flex align-items-center text-white position-relative">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8 text-center mx-auto">
+    <header class="hero-section text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
 
-                    <!-- Big headline -->
-                    <h1 class="display-1 fw-bold lh-1 mb-3">
+                    <!-- Title -->
+                    <h1 class="display-3 fw-bold ">
                         Bridgwater Guy Fawkes Carnival
                     </h1>
 
-                    <!-- Subcopy -->
-                    <p class="lead mb-4">
-                        Join thousands on the streets of Bridgwater for illuminated carts, performers, and fireworks.
+                    <p class="lead">
+                        Seeing is believing in the UK's largest illuminated procession, <br>
+                        Returning on November 7th, 2026!
                     </p>
 
-                    <!-- Small “pills” row -->
-                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
-                            <i class="bi bi-calendar2-week me-2"></i> 7 Nov 2026
-                        </span>
-                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
-                            <i class="bi bi-geo-alt me-2"></i> Bridgwater, Somerset
-                        </span>
-                        <span class="btn btn-outline-light btn-sm rounded-pill px-3">
-                            <i class="bi bi-stars me-2"></i> Since 1881
-                        </span>
+                    <!-- Parade countdown -->
+                    <div id="countdown"
+                        class="countdown-wrapper pb-4 d-flex flex-wrap justify-content-start justify-content-md-start overflow-visible"
+                        data-countdown data-target="2026-11-07T18:00:00">
+
+                        <div class="countdown-item d-grid bg-primary bg-opacity-25 text-primary text-center">
+                            <div class="countdown-number display-5 fw-bold" data-unit="days">00</div>
+                            <small class="fw-semibold">Days</small>
+                        </div>
+
+                        <div class="countdown-item d-grid bg-danger bg-opacity-25 text-danger text-center">
+                            <div class="countdown-number display-5 fw-bold" data-unit="hours">00</div>
+                            <small class="fw-semibold">Hrs</small>
+                        </div>
+
+                        <div class="countdown-item d-grid bg-success bg-opacity-25 text-success text-center">
+                            <div class="countdown-number display-5 fw-bold" data-unit="minutes">00</div>
+                            <small class="fw-semibold">Mins</small>
+                        </div>
+
+                        <div class="countdown-item d-grid bg-warning bg-opacity-25 text-warning text-center">
+                            <div class="countdown-number display-5 fw-bold" data-unit="seconds">00</div>
+                            <small class="fw-semibold">Secs</small>
+                        </div>
                     </div>
 
-                    <!-- CTAs -->
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <a href="#countdown" class="btn btn-primary btn-lg shadow rounded-0">
-                            <i class="bi bi-stopwatch me-2"></i> See the countdown
-                        </a>
-                        <a href="information.html" class="btn btn-outline-light btn-lg rounded-0">
+                    <!-- Buttons -->
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="information.html" class="btn btn-primary btn-lg shadow rounded-0">
                             <i class="bi bi-info-circle me-2"></i> Event information
                         </a>
+                        <a href="app.html" class="btn btn-outline-light btn-lg rounded-0">
+                            <i class="bi bi-phone me-2"></i> Download our app
+                        </a>
                     </div>
-
-                    <!-- Bottom light stats row -->
-                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4 small">
-                        <span><i class="bi bi-people me-2"></i>100k+ spectators</span>
-                        <span class="vr d-none d-md-block"></span>
-                        <span><i class="bi bi-lightning-charge me-2"></i>Illuminated procession</span>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -138,216 +143,169 @@
 
     <div class="container">
 
-        <!-- Begin page content here section -->
-        <div class="container py-4 mt-4 border-top text-center">
-            <!-- Text and countdown -->
-            <div class="mb-4">
-                <h3 class="display-5">Seeing is believing</h3>
-                <p>
-                    Parade starts in...
-                </p>
-                <!-- Parade Countdown -->
-                <div id="countdown" class="countdown-wrapper pb-4 d-flex justify-content-center overflow-auto"
-                    data-countdown data-target="2026-11-07T18:00:00">
-                    <div class="countdown-item d-grid bg-primary bg-opacity-25 text-primary text-center">
-                        <div class="countdown-number display-5 fw-bold" data-unit="days">00</div>
-                        <small class="fw-semibold">Days</small>
-                    </div>
+        <!-- News / Updates section -->
+        <div class="py-5 mt-4 border-top" id="news">
+            <div class="container">
 
-                    <div class="countdown-item d-grid bg-danger bg-opacity-25 text-danger text-center">
-                        <div class="countdown-number display-5 fw-bold" data-unit="hours">00</div>
-                        <small class="fw-semibold">Hrs</small>
+                <!-- Heading -->
+                <div class="row align-items-center mb-4">
+                    <div class="col-md-8 text-md-start text-center">
+                        <h2 class="display-6 mb-1">Latest carnival news</h2>
+                        <p class="text-muted mb-0">
+                            Keep up to date with the latest information and announcements leading up to procession
+                            night.
+                        </p>
                     </div>
-
-                    <div class="countdown-item d-grid bg-success bg-opacity-25 text-success text-center">
-                        <div class="countdown-number display-5 fw-bold" data-unit="minutes">00</div>
-                        <small class="fw-semibold">Mins</small>
-                    </div>
-
-                    <div class="countdown-item d-grid bg-warning bg-opacity-25 text-warning text-center">
-                        <div class="countdown-number display-5 fw-bold" data-unit="seconds">00</div>
-                        <small class="fw-semibold">Secs</small>
+                    <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+                        <a href="news.html" class="btn btn-outline-primary rounded-0">
+                            <i class="bi bi-newspaper me-1"></i>
+                            View all news
+                        </a>
                     </div>
                 </div>
 
-                <!-- News / Updates Section -->
-                <div class="py-5 mt-4 border-top" id="news">
-                    <div class="container">
+                <!-- News cards -->
+                <div class="row g-4">
 
-                        <!-- Heading + CTA -->
-                        <div class="row align-items-center mb-4">
-                            <div class="col-md-8 text-md-start text-center">
-                                <h2 class="display-6 mb-1">Latest carnival news</h2>
-                                <p class="text-muted mb-0">
-                                    Announcements, road closures, and updates leading up to procession night.
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-0">
+
+                            <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0"
+                                alt="Procession route">
+
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small text-muted">
+                                        <i class="bi bi-calendar-event me-1"></i> 12 Oct 2025
+                                    </span>
+                                </div>
+
+                                <h3 class="h5 card-title mb-2">
+                                    <a href="#" class="stretched-link text-decoration-none text-body">
+                                        News title 1
+                                    </a>
+                                </h3>
+
+                                <p class="text-muted mb-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi voluptatem
+                                    quibusdam doloremque est mollitia illo commodi. Fuga, rem!
                                 </p>
-                            </div>
-                            <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
-                                <a href="news.html" class="btn btn-outline-primary rounded-0 btn-sm">
-                                    <i class="bi bi-newspaper me-1"></i>
-                                    View all news
-                                </a>
+
+                                <div
+                                    class="mt-auto small text-uppercase fw-semibold text-primary d-flex align-items-center">
+                                    Read more
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
+                                </div>
+
                             </div>
                         </div>
+                    </div>
 
-                        <!-- News cards -->
-                        <div class="row g-4">
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-0">
 
-                            <!-- Card 1 -->
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card h-100 border-0 shadow-sm rounded-0">
+                            <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0"
+                                alt="Travel updates">
 
-                                    <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?w=800&h=500&fit=crop"
-                                        class="card-img-top rounded-0" alt="Procession route">
+                            <div class="card-body d-flex flex-column">
 
-                                    <div class="card-body d-flex flex-column">
-
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span
-                                                class="badge rounded-pill bg-primary bg-opacity-10 text-primary small">
-                                                <i class="bi bi-megaphone-fill me-1"></i> Announcement
-                                            </span>
-                                            <span class="small text-muted">
-                                                <i class="bi bi-calendar-event me-1"></i> 12 Oct 2025
-                                            </span>
-                                        </div>
-
-                                        <h3 class="h5 card-title mb-2">
-                                            <a href="#" class="stretched-link text-decoration-none text-body">
-                                                2026 procession route confirmed
-                                            </a>
-                                        </h3>
-
-                                        <p class="text-muted mb-3">
-                                            The official route for the 2026 illuminated procession has been confirmed,
-                                            with timing details
-                                            and the best viewing spots.
-                                        </p>
-
-                                        <div
-                                            class="mt-auto small text-uppercase fw-semibold text-primary d-flex align-items-center">
-                                            Read more
-                                            <i class="bi bi-arrow-right-short ms-1"></i>
-                                        </div>
-
-                                    </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small text-muted">
+                                        <i class="bi bi-calendar-event me-1"></i> 03 Sep 2025
+                                    </span>
                                 </div>
-                            </div>
 
-                            <!-- Card 2 -->
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card h-100 border-0 shadow-sm rounded-0">
+                                <h3 class="h5 card-title mb-2">
+                                    <a href="#" class="stretched-link text-decoration-none text-body">
+                                        News title 2
+                                    </a>
+                                </h3>
 
-                                    <img src="https://images.unsplash.com/photo-1505842465776-3d90f6163100?w=800&h=500&fit=crop"
-                                        class="card-img-top rounded-0" alt="Travel updates">
+                                <p class="text-muted mb-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi voluptatem
+                                    quibusdam doloremque est mollitia illo commodi. Fuga, rem!
+                                </p>
 
-                                    <div class="card-body d-flex flex-column">
-
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span
-                                                class="badge rounded-pill bg-success bg-opacity-10 text-success small">
-                                                <i class="bi bi-bus-front-fill me-1"></i> Travel
-                                            </span>
-                                            <span class="small text-muted">
-                                                <i class="bi bi-calendar-event me-1"></i> 03 Sep 2025
-                                            </span>
-                                        </div>
-
-                                        <h3 class="h5 card-title mb-2">
-                                            <a href="#" class="stretched-link text-decoration-none text-body">
-                                                Park &amp; ride and road closure info
-                                            </a>
-                                        </h3>
-
-                                        <p class="text-muted mb-3">
-                                            Plan your journey with our updated guidance on parking, park &amp; ride
-                                            availability,
-                                            and confirmed road closures.
-                                        </p>
-
-                                        <div
-                                            class="mt-auto small text-uppercase fw-semibold text-success d-flex align-items-center">
-                                            Travel details
-                                            <i class="bi bi-arrow-right-short ms-1"></i>
-                                        </div>
-
-                                    </div>
+                                <div
+                                    class="mt-auto small text-uppercase fw-semibold text-primary d-flex align-items-center">
+                                    Read more
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
                                 </div>
+
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- Card 3 -->
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card h-100 border-0 shadow-sm rounded-0">
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-0">
 
-                                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=500&fit=crop"
-                                        class="card-img-top rounded-0" alt="Carnival club">
+                            <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0"
+                                alt="Carnival club">
 
-                                    <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column">
 
-                                        <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <span
-                                                class="badge rounded-pill bg-warning bg-opacity-10 text-warning small">
-                                                <i class="bi bi-stars me-1"></i> Carnival clubs
-                                            </span>
-                                            <span class="small text-muted">
-                                                <i class="bi bi-calendar-event me-1"></i> 18 Aug 2025
-                                            </span>
-                                        </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="small text-muted">
+                                        <i class="bi bi-calendar-event me-1"></i> 18 Aug 2025
+                                    </span>
+                                </div>
 
-                                        <h3 class="h5 card-title mb-2">
-                                            <a href="#" class="stretched-link text-decoration-none text-body">
-                                                Meet the 2026 cart builders
-                                            </a>
-                                        </h3>
+                                <h3 class="h5 card-title mb-2">
+                                    <a href="#" class="stretched-link text-decoration-none text-body">
+                                        News title 3
+                                    </a>
+                                </h3>
 
-                                        <p class="text-muted mb-3">
-                                            Learn about the teams behind the illuminated carts and how you can support
-                                            their fundraising.
-                                        </p>
+                                <p class="text-muted mb-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi voluptatem
+                                    quibusdam doloremque est mollitia illo commodi. Fuga, rem!
+                                </p>
 
-                                        <div
-                                            class="mt-auto small text-uppercase fw-semibold text-warning d-flex align-items-center">
-                                            Learn more
-                                            <i class="bi bi-arrow-right-short ms-1"></i>
-                                        </div>
-                                    </div>
+                                <div
+                                    class="mt-auto small text-uppercase fw-semibold text-primary d-flex align-items-center">
+                                    Read more
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Footer -->
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center px-3">
-                        <span class="mb-3 mb-md-0 text-body-secondary">© 2025, Callum R</span>
-                    </div>
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-3">
-                        <li class="ms-3"><a class="text-body-secondary" href="https://x.com/BCarnival"><i
-                                    class="bi bi-twitter-x fs-4"></i></a></li>
-                        <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.facebook.com/BridgwaterGuyFawkesCarnival/"><i
-                                    class="bi bi-facebook fs-4"></i></a></li>
-                        <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.instagram.com/bridgwatercarnival/"><i
-                                    class="bi bi-instagram fs-4"></i></a></li>
-                        <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.tiktok.com/@bridgwater_carnival"><i class="bi bi-tiktok fs-4"></i></a>
-                        </li>
-                        <li class="ms-3"><a class="text-body-secondary"
-                                href="https://www.youtube.com/user/BGFCarnival/"><i class="bi bi-youtube fs-4"></i></a>
-                        </li>
-                    </ul>
-                </footer>
-
-
-                <!-- Bootstrap JavaScript -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                    crossorigin="anonymous"></script>
-                <!-- Custom JavaScript -->
-                <script src="assets/js/main.js"></script>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+            <div class="col-md-4 d-flex align-items-center px-3">
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025, Callum R</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-3">
+                <li class="ms-3"><a class="text-body-secondary" href="https://x.com/BCarnival"><i
+                            class="bi bi-twitter-x fs-4"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary"
+                        href="https://www.facebook.com/BridgwaterGuyFawkesCarnival/"><i
+                            class="bi bi-facebook fs-4"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/bridgwatercarnival/"><i
+                            class="bi bi-instagram fs-4"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.tiktok.com/@bridgwater_carnival"><i
+                            class="bi bi-tiktok fs-4"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/user/BGFCarnival/"><i
+                            class="bi bi-youtube fs-4"></i></a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <!-- Custom JavaScript -->
+        <script src="assets/js/main.js"></script>
+    </div>
 </body>
 
 </html>

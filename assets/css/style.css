@@ -30,8 +30,9 @@ body {
 .hero-section {
     background:
         linear-gradient(rgba(7, 14, 30, 0.65), rgba(7, 14, 30, 0.65)),
-        url("/assets/images/Ramblers2025.jpg") center/cover no-repeat;
-    height: 90vh;
+        url("/assets/images/Banner.jpg");
+    min-height: 65vh;
+
 }
 
 /* Countdown on homepage */
@@ -67,3 +68,5 @@ body {
         margin-left: -15px;
     }
 }
+
+/* Testing Styles */
