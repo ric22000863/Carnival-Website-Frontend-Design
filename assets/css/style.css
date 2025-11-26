@@ -29,10 +29,14 @@ body {
 /* Hero banner on homepage */
 .hero-section {
     background:
-        linear-gradient(rgba(7, 14, 30, 0.65), rgba(7, 14, 30, 0.65)),
-        url("/assets/images/Banner.jpg");
-    min-height: 65vh;
+        url("/assets/images/Ramblers2025.jpg");
+    min-height: 80vh;
 
+}
+
+.hero-overlay {
+    background: rgba(255, 255, 255);
+    padding: 2rem;
 }
 
 /* Countdown on homepage */
