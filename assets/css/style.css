@@ -8,7 +8,7 @@ body {
 /* Navbar styles */
 .navbar-accent {
     height: 6px;
-    background: rgb(74, 145, 226);
+    background: rgb(35, 120, 210);
 }
 
 .nav-underline {
@@ -17,7 +17,7 @@ body {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: rgb(74, 145, 226);
+    background: rgb(35, 120, 210);
     transition: width 0.3s ease;
 }
 
@@ -30,7 +30,7 @@ body {
 .hero-section {
     background:
         url("/assets/images/Ramblers2025.jpg");
-    min-height: 80vh;
+    min-height: 65vh;
 
 }
 
