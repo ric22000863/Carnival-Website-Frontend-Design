@@ -26,17 +26,16 @@ body {
     width: 100%;
 }
 
-/* Hero banner on homepage */
+/* Banner on homepage */
 .hero-section {
-    background:
-        url("/assets/images/Ramblers2025.jpg");
-    min-height: 65vh;
-
+    position: relative;
+    height: 70vh;
+    background: url("/assets/images/Ramblers2025.jpg");
 }
 
-.hero-overlay {
-    background: rgba(255, 255, 255);
-    padding: 2rem;
+.hero-panel {
+    background: rgba(226, 233, 235, 0.88);
+    height: 100%;
 }
 
 /* Countdown on homepage */
@@ -73,7 +72,8 @@ body {
     }
 }
 
-/* Testing Styles */
-.homepage-section-background{
+/* Homepage styles */
+.homepage-section-background {
     background: rgb(226, 233, 235);
 }
+
