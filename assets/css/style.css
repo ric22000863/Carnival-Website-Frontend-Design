@@ -30,7 +30,7 @@ body {
 .hero-section {
     position: relative;
     height: 70vh;
-    background: url("/assets/images/Ramblers2025.jpg");
+    background: url("assets/images/Ramblers2025.jpg");
 }
 
 .hero-panel {
