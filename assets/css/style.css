@@ -1,23 +1,18 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Navbar styles */
-.navbar-accent {
-    height: 6px;
-    background: rgb(35, 120, 210);
-}
-
 .nav-underline {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
     height: 2px;
-    background: rgb(35, 120, 210);
+    background: rgb(0, 93, 165);
     transition: width 0.3s ease;
 }
 
@@ -26,54 +21,38 @@ body {
     width: 100%;
 }
 
-/* Banner on homepage */
-.hero-section {
-    position: relative;
-    height: 70vh;
-    background: url("/assets/images/Ramblers2025.jpg");
+/* Banner / hero section on homepage */
+.hero {
+  height: 85vh;
 }
 
-.hero-panel {
-    background: rgba(226, 233, 235, 0.88);
-    height: 100%;
+.hero-image {
+object-position: top;
 }
 
-/* Countdown on homepage */
-.countdown-item {
-    width: 150px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-    text-align: center;
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5vh;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  pointer-events: none;
+  z-index: 2;
 }
 
-.countdown-item+.countdown-item {
-    margin-left: -25px;
-}
 
-@media (max-width: 768px) {
-    .countdown-item {
-        width: 120px;
-    }
-
-    .countdown-item+.countdown-item {
-        margin-left: -20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .countdown-item {
-        width: 100px;
-    }
-
-    .countdown-item+.countdown-item {
-        margin-left: -15px;
-    }
-}
-
-/* Homepage styles */
-.homepage-section-background {
+/* Page styles */
+.section-background-offwhite {
     background: rgb(226, 233, 235);
+}
+
+.section-background-blue {
+    background: rgb(0, 93, 165);
+}
+
+.text-colour-blue {
+    color: rgb(0, 93, 165);
 }
 

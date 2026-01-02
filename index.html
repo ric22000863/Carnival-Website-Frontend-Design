@@ -22,7 +22,7 @@
             <div class="container-fluid px-1">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="50"
+                    <img src="/assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="70"
                         id="navBarLogo">
                 </a>
 
@@ -82,45 +82,33 @@
         </nav>
     </div>
 
-    <!-- Navbar accent bar -->
-    <div class="navbar-accent"></div>
+    <!-- Bar under navbar -->
+    <div class="section-background-blue text-white py-2">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center text-center">
+                <small class="fw-semibold text-uppercase">
+                    Bridgwater Carnival Returns – Saturday 7 November 2026
+                </small>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero banner section -->
-    <div class="hero-section d-flex align-items-stretch">
-        <div class="container h-100">
-            <div class="row h-100">
-                <!-- Left panel -->
-                <div class="col-12 col-md-6 d-flex p-0">
-                    <div class="hero-panel d-flex align-items-center w-100">
-                        <div class="p-4 p-md-5">
-
-                            <!-- Title -->
-                            <h1 class="display-4 fw-bold mb-3">
-                                Bridgwater Guy Fawkes Carnival
-                            </h1>
-
-                            <!-- Sub text -->
-                            <p class="lead mb-4">
-                                Seeing is believing in the UK's largest illuminated procession, <br>
-                                Returning on November 7th, 2026!
-                            </p>
-
-                            <!-- Buttons -->
-                            <div class="d-flex flex-wrap gap-3">
-                                <a href="information.html" class="btn btn-primary btn-lg shadow rounded-pill">
-                                    <i class="bi bi-info-circle me-2"></i> Event Information
-                                </a>
-                                <a href="app.html" class="btn btn-secondary btn-lg rounded-pill">
-                                    <i class="bi bi-phone me-2"></i> Download the App
-                                </a>
-                            </div>
-
-                        </div>
+    <div class="hero position-relative">
+        <div id="homeHero" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100" data-bs-interval="7000">
+                    <img src="assets/images/2Ramblers2025.jpg" class="d-block w-100 h-100 object-fit-cover hero-image"
+                        alt="Carnival hero">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ramblers CC: 1912 All Out</h5>
+                        <p>Carnival 2025 Winners</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Main content starts here -->
 
@@ -128,39 +116,51 @@
     <div class="py-5">
         <div class="container text-center">
 
-            <h2 class="display-6 mb-3">Essential information</h2>
-            <p class="text-muted mb-5">
+            <h2 class="display-2 mb-2 fw-semibold text-colour-blue">Essential Information</h2>
+            <p class="text-muted mb-3">
                 Everything you need to make to know for the event.
             </p>
 
             <div class="row g-5">
 
                 <!-- Box 1 -->
-                <div class="col-md-4">
-                    <i class="bi bi-question fs-2 text-primary mb-3"></i>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <i class="bi bi-phone fs-2 text-primary mb-3"></i>
+                    <h4 class="fw-semibold mb-2">Download the App</h4>
+                    <p class="text-muted">
+                        Want to get the most out of Bridgwater Carnival? Download the official app today!
+                    </p>
+                    <a href="#" class="btn btn-outline-primary rounded-pill px-4">
+                        Download our App
+                    </a>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <i class="bi bi-question-lg fs-2 text-primary mb-3"></i>
                     <h4 class="fw-semibold mb-2">FAQ's</h4>
                     <p class="text-muted">
-                        All the most Frequently Asked Questions about the Bridgwater Carnival, Concerts and Procession.
+                        All the most Frequently Asked Questions about the Bridgwater Carnival.
                     </p>
                     <a href="#" class="btn btn-outline-primary rounded-pill px-4">
                         Questions & Answers
                     </a>
                 </div>
 
-                <!-- Box 2 -->
-                <div class="col-md-4">
+                <!-- Box 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
                     <i class="bi bi-car-front-fill fs-2 text-primary mb-3"></i>
                     <h4 class="fw-semibold mb-2">Parking & Road Closures</h4>
                     <p class="text-muted">
-                        Find the latest information on parking, road closures and travel advice for procession night.
+                        Find the latest information on parking and travel updates for procession night.
                     </p>
                     <a href="#" class="btn btn-outline-primary rounded-pill px-4">
                         Parking & Travel
                     </a>
                 </div>
 
-                <!-- Box 3 -->
-                <div class="col-md-4">
+                <!-- Box 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
                     <i class="bi bi-map-fill fs-2 text-primary mb-3"></i>
                     <h4 class="fw-semibold mb-2">Procession Route</h4>
                     <p class="text-muted">
@@ -176,12 +176,12 @@
     </div>
 
     <!-- About carnival section -->
-    <div class="py-5 homepage-section-background">
+    <div class="py-5 section-background-offwhite">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <!-- Text -->
                 <div class="col-lg-6">
-                    <h2 class="display-6 mb-3">About Bridgwater Carnival</h2>
+                    <h2 class="display-4 mb-2 fw-semibold text-colour-blue">About Bridgwater Carnival</h2>
                     <p class="mb-4 text-secondary">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam quos, eum explicabo dolorem
                         voluptatum velit quibusdam ad facere quasi quod blanditiis quam quae error. Illum ad eaque ipsa
@@ -208,7 +208,7 @@
             <!-- Heading -->
             <div class="row align-items-center mb-4">
                 <div class="col-md-8 text-md-start text-center">
-                    <h2 class="display-6 mb-1">Latest carnival news</h2>
+                    <h2 class="display-4 mb-2 fw-semibold text-colour-blue">Latest carnival news</h2>
                     <p class="text-muted mb-0">
                         Keep up to date with the latest information and announcements leading up to procession
                         night.
@@ -227,7 +227,7 @@
             <div class="row g-4">
 
                 <!-- Card 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm rounded-0">
 
                         <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0"
@@ -262,7 +262,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm rounded-0">
 
                         <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0" alt="Travel updates">
@@ -297,7 +297,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm rounded-0">
 
                         <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0" alt="Carnival club">
@@ -329,12 +329,46 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-0">
+
+                        <img src="/assets/images/Ramblers2025.jpg" class="card-img-top rounded-0" alt="Carnival club">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="small text-muted">
+                                    <i class="bi bi-calendar-event me-1"></i> 8th Jul 2025
+                                </span>
+                            </div>
+
+                            <h3 class="h5 card-title mb-2">
+                                <a href="#" class="stretched-link text-decoration-none text-body">
+                                    News title 4
+                                </a>
+                            </h3>
+
+                            <p class="text-muted mb-3">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque modi voluptatem
+                                quibusdam doloremque est mollitia illo commodi. Fuga, rem!
+                            </p>
+
+                            <div
+                                class="mt-auto small text-uppercase fw-semibold text-primary d-flex align-items-center">
+                                Read more
+                                <i class="bi bi-arrow-right-short ms-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Online store section -->
-    <div class="py-5 homepage-section-background">
+    <div class="py-5 section-background-offwhite">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <!-- Image -->
@@ -345,7 +379,7 @@
 
                 <!-- Text -->
                 <div class="col-lg-6">
-                    <h2 class="display-6 mb-3">Support the Carnival</h2>
+                    <h2 class="display-4 mb-2 fw-semibold text-colour-blue">Support the Carnival</h2>
                     <p class="mb-4 text-secondary">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam quos, eum explicabo dolorem
                         voluptatum velit quibusdam ad facere quasi quod blanditiis quam quae error. Illum ad eaque ipsa
@@ -363,11 +397,10 @@
     </div>
 
     <!-- Footer -->
-    <div class="navbar-accent"></div>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-4">
             <div class="col-md-4 d-flex align-items-center px-3">
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2025, Callum R</span>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025, Bridgwater Carnival Ltd - Website created by UCS</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-3">
                 <li class="ms-3"><a class="text-body-secondary" href="https://x.com/BCarnival"><i
