@@ -15,11 +15,11 @@
     <link id="theme" href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-theme="light">
+<body>
     <div class="container">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light py-3">
-            <div class="container-fluid px-1">
+            <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="70"
@@ -117,11 +117,12 @@
         <div class="container py-5">
             <div class="row justify-content-center text-center">
                 <div>
-                    <h1 class="display-3 fw-semibold text-uppercase mb-3">
+                    <h1 class="display-3 fw-bold text-uppercase mb-3">
                         Bridgwater Guy Fawkes Carnival
                     </h1>
                     <p class="text-white">
-                        The UK's Oldest Carnival and one of the largest illuminated processions in Europe, returning on Saturday 7th November 2026.
+                        The UK's Oldest Carnival and one of the largest illuminated processions in Europe, returning on
+                        Saturday 7th November 2026.
                     </p>
                 </div>
             </div>
@@ -147,8 +148,34 @@
 
                 <!-- Image -->
                 <div class="col-lg-7">
-                    <img src="assets/images/Ramblers2025.jpg" alt="Image of Bridgwater Carnival" class="w-100 rounded">
+                    <div id="homeCarousel" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/Ramblers2025.jpg" class="d-block w-100 rounded-1"
+                                    alt="1912: All Out - Ramblers Carnival Club">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Gremlins2025.jpg" class="d-block w-100 rounded-1"
+                                    alt="Morning of the Dragon - Gremlins Carnival Club">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/LimeKiln2025.jpg" class="d-block w-100 rounded-1"
+                                    alt="Dia De los Muertos - Lime Kiln Carnival Club">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
