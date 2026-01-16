@@ -1,8 +1,52 @@
-/* Font imports */
+/* FONT STYLES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Standard font for text */
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', 'Roboto', sans-serif;
+}
+
+/* Font for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', 'Roboto Condensed', sans-serif;
+}
+
+/* BOOTSTRAP OVERRIDE STYLES */
+/* Text styles */
+.text-primary {
+    color: rgb(0, 93, 165) !important;
+}
+
+/* Button styles */
+.btn-primary {
+    background: rgb(0, 93, 165);
+    border: rgb(0, 93, 165);
+}
+
+.btn-primary:hover {
+    background: rgb(0, 70, 125);
+    border: rgb(0, 70, 125);
+}
+
+.btn-outline-primary {
+    color: rgb(0, 93, 165);
+    border-color: rgb(0, 93, 165);
+}
+
+.btn-outline-primary:hover {
+    background-color: rgb(0, 93, 165);
+    border-color: rgb(0, 93, 165);
+}
+
+/* GENERAL PAGE STYLES */
+/* Page styles */
+.section-background-offwhite {
+    background: rgb(226, 233, 235);
+}
+
+.section-background-blue {
+    background: rgb(0, 93, 165);
 }
 
 /* Navbar styles */
@@ -21,20 +65,5 @@ body {
     width: 100%;
 }
 
-/* Banner / hero section on homepage */
 
-
-
-/* Page styles */
-.section-background-offwhite {
-    background: rgb(226, 233, 235);
-}
-
-.section-background-blue {
-    background: rgb(0, 93, 165);
-}
-
-.text-colour-blue {
-    color: rgb(0, 93, 165);
-}
 
