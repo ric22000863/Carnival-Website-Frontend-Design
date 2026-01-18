@@ -13,30 +13,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* BOOTSTRAP OVERRIDE STYLES */
-/* Text styles */
-.text-primary {
-    color: rgb(0, 93, 165) !important;
+/* Root (updates text etc.) */
+:root {
+  --bs-primary: rgb(0, 93, 165);
+  --bs-primary-rgb: 0, 93, 165;
 }
 
 /* Button styles */
 .btn-primary {
-    background: rgb(0, 93, 165);
-    border: rgb(0, 93, 165);
-}
-
-.btn-primary:hover {
-    background: rgb(0, 70, 125);
-    border: rgb(0, 70, 125);
+  --bs-btn-bg: rgb(0, 93, 165);
+  --bs-btn-border-color: rgb(0, 93, 165);
+  --bs-btn-hover-bg: rgb(0, 70, 125);
+  --bs-btn-hover-border-color: rgb(0, 70, 125);
 }
 
 .btn-outline-primary {
-    color: rgb(0, 93, 165);
-    border-color: rgb(0, 93, 165);
-}
-
-.btn-outline-primary:hover {
-    background-color: rgb(0, 93, 165);
-    border-color: rgb(0, 93, 165);
+  --bs-btn-color: rgb(0, 93, 165);
+  --bs-btn-border-color: rgb(0, 93, 165);
+  --bs-btn-hover-bg: rgb(0, 93, 165);
+  --bs-btn-hover-border-color: rgb(0, 93, 165);
+  --bs-btn-hover-color: #fff;
 }
 
 /* GENERAL PAGE STYLES */
@@ -49,21 +45,10 @@ h1, h2, h3, h4, h5, h6 {
     background: rgb(0, 93, 165);
 }
 
-/* Navbar styles */
-.nav-underline {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: rgb(0, 93, 165);
-    transition: width 0.3s ease;
+.section-background-grey {
+    background: rgb(242, 242, 242);
 }
 
-.nav-link:hover .nav-underline,
-.nav-link.active .nav-underline {
-    width: 100%;
-}
 
 
 
