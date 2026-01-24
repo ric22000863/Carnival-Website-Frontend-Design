@@ -16,77 +16,115 @@
 </head>
 
 <body data-bs-theme="light">
-    <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
-            <div class="container-fluid px-1">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="70"
-                        id="navBarLogo">
-                </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+        <div class="container py-2">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="60"
+                    id="navBarLogo">
+            </a>
 
-                <!-- Mobile toggle -->
-                <button class="navbar-toggler border-0 rounded-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler border-0 rounded-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav text-uppercase fw-semibold align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link active position-relative mx-2" href="index.html">
-                                Home <span class="nav-underline"></span>
-                            </a>
-                        </li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav text-uppercase fw-semibold align-items-lg-center gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link active px-lg-3" href="index.html">Home</a>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle position-relative mx-2" href="about.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About <span class="nav-underline"></span>
-                            </a>
-                            <ul class="dropdown-menu rounded-0 border-0">
-                                <li><a class="dropdown-item" href="#">Event</a></li>
-                                <li><a class="dropdown-item" href="#">Committee</a></li>
-                                <li><a class="dropdown-item" href="#">History</a></li>
-                            </ul>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3" href="carnival-procession.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            The Procession
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0">
+                            <li><a class="dropdown-item" href="#">Procession Information</a></li>
+                            <li><a class="dropdown-item" href="#">Procession Programmes</a></li>
+                            <li><a class="dropdown-item" href="#">Procession Results</a></li>
+                            <li><a class="dropdown-item" href="#">Judging</a></li>
+                            <li><a class="dropdown-item" href="#">S.C.G.F.C.A Entry Forms</a></li>
+                            <li><a class="dropdown-item" href="#">Carnival History</a></li>
+                        </ul>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle position-relative mx-2" href="about.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Information <span class="nav-underline"></span>
-                            </a>
-                            <ul class="dropdown-menu rounded-0 border-0">
-                                <li><a class="dropdown-item" href="#">FAQ's</a></li>
-                                <li><a class="dropdown-item" href="#">Parking & Travel Updates</a></li>
-                                <li><a class="dropdown-item" href="news.html">News</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link position-relative mx-2" href="contact.html">
-                                Contact <span class="nav-underline"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link position-relative mx-2" href="shop.html">
-                                Shop <span class="nav-underline"></span>
-                            </a>
-                        </li>
-                        <!-- Basket button -->
-                        <li class="nav-item border-start ps-2">
-                            <a class="btn btn-primary rounded-pill position-relative mx-2" href="basket.html">
-                                <i class="bi bi-basket3-fill me-2"></i>
-                                Basket
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3" href="carnival-concerts.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Concerts
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0">
+                            <li><a class="dropdown-item" href="#">Concert Information</a></li>
+                            <li><a class="dropdown-item" href="#">Concert Programmes</a></li>
+                            <li><a class="dropdown-item" href="#">Concert Results</a></li>
+                            <li><a class="dropdown-item" href="#">Auditions</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3" href="about.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0">
+                            <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                            <li><a class="dropdown-item" href="#">Parking & Travel</a></li>
+                            <li><a class="dropdown-item" href="news.html">News</a></li>
+                            <li><a class="dropdown-item" href="#">Maps</a></li>
+                            <li><a class="dropdown-item" href="#">Dates</a></li>
+                            <li><a class="dropdown-item" href="#">Corporate Hospitality</a></li>
+                            <li><a class="dropdown-item" href="#">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3" href="contact.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0">
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Committie Officers</a></li>
+                            <li><a class="dropdown-item" href="#">Carnival Centre</a></li>
+                            <li><a class="dropdown-item" href="#">Friends of the Carnival</a></li>
+                            <li><a class="dropdown-item" href="#">County Carnivals</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3" href="shop.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0">
+                            <li><a class="dropdown-item" href="#">Concert Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">Procession Grandstand Seats</a></li>
+                            <li><a class="dropdown-item" href="#">DVDs</a></li>
+                            <li><a class="dropdown-item" href="#">Processions Videos</a></li>
+                            <li><a class="dropdown-item" href="#">Merchendise</a></li>
+                            <li><a class="dropdown-item" href="#">Parking</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary fw-semibold rounded-pill px-4" href="basket.html">
+                            <i class="bi bi-basket3-fill me-2"></i>Basket
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-outline-primary fw-semibold rounded-pill px-4"
+                            href="https://www.paypal.com/donate?token=2zbA9jvcttamK6ufMYhxJ6Y6SWCj2P8kLkrHx1Iz0GcXwh4I0Lf0fX6O4iVCmKVgTfSh7ArI7IIRX5-b">
+                            Donate
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <!-- Bar under navbar -->
     <div class="section-background-offwhite text-muted py-2">
