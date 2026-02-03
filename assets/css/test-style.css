@@ -50,6 +50,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* TESTING STYLES */
+/* Hero basics */
+.hero {
+  min-height: 93vh; /* tweak to 80-90vh if you want it taller */
+}
+
+/* Make the carousel fill the hero */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+/* Dark gradient overlay (text stays readable) */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.10) 100%
+  );
+}
+
+/* Ensure hero content sits above overlay */
+.hero-content {
+  z-index: 2;
+}
+
+/* Angled white bottom edge */
+.hero-angle {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  transform: skewY(-3deg);
+  transform-origin: left top;
+  z-index: 2;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #FBFBF8;
+    color: black;
+    font-size: 30px;
+  }
+
+.header-right {
+    float: right;
+  }
+
+.header1 {
+  display: table;
+}
+
+.header2 {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
 
