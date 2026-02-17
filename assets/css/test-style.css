@@ -1,16 +1,30 @@
-/* FONT STYLES */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
 
 /* Font styles */
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Jost', sans-serif;
 }
 
 p {
-  font-family: 'Jost', sans-serif;
-  font-size: 17px;
+  font-size: 1.06rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.h1hero {
+  font-size: 5rem;
+   text-shadow:.3vw .3vw 4px rgb(20, 20, 20);
+   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .h1hero {
+    font-size: 3.5rem;
+  }
 }
 
 /* Root (updates text from bootstrap etc.) */
@@ -24,7 +38,9 @@ p {
   --bs-btn-bg: #b22527;
   --bs-btn-border-color: #ce9596;
   --bs-btn-hover-bg: #A51E1E;
-  --bs-btn-hover-border-color: #A51E1E; 
+  --bs-btn-hover-border-color: #A51E1E;
+  font-weight: 500;
+  font-size: 1.1rem;
 
 }
 
@@ -34,12 +50,19 @@ p {
   --bs-btn-hover-bg: #b22527;
   --bs-btn-hover-border-color: #b22527;
   --bs-btn-hover-color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
-.bg-whitered {
-  background-color: #fbf4f4;
+/* Navbar styles */
+.nav-item{
+  font-weight: 550;
+  font-size: 1.05rem;
 }
 
+.dropdown-item {
+  font-weight: 500;
+}
 
 /* Hero masthead styles */
 .masthead {
