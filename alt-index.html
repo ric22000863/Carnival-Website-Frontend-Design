@@ -16,191 +16,63 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <div class="container">
-    <nav class="navbar navbar-expand-lg">
+    <!-- classes to help make mobile compatible and center -->
+    <header class="position-relative d-flex flex-wrap justify-content-left py-3 ">
+      <a href="index.html" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="logo" src="assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival Logo">
+        <h1>Bridgwater Guy Fawkes Carnival</h1>
+      </a>
+      <div class="d-flex d-none d-lg-flex  flex-wrap justify-content-end ">
+        <!-- Bootstrap Margin, Padding and Display Classes -->
+        <i class="py-5 me-1 align-items-center fa-solid fa-location-dot fa-2xl iconColour2" alt="GPS Icon"></i>
+        <div class="header1 me-2 ">
+          <p1 class="p-2">Saturday 7th November 2026</p1>
+        </div>
+    </header>
+
+  </div>
+  <div class="border-bottom border-2">
+  </div>
+
+  <!-- Navbar-->
+  <div class="container">
+    <!-- Classes to make nav bar mobile friendly as well as changing styling properties-->
+    <nav class="navbar navbar-expand-md navbar-light navbar-text navbar-custom">
       <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/PlaceholderNavLogo.png" alt="Bridgwater Guy Fawkes Carnival" height="65"
-            id="navBarLogo">
-        </a>
-        <!-- Mobile Dropdown Button -->
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <!-- Creates a drop down nav bar when viewed on mobile-->
+        <i class="d-flex  flex-wrap justify-content-left fa-solid fa-location-dot fa-2xl iconColour2"
+          alt="GPS Icon"></i>
+        <div class="d-flex d-sm-none justify-content-left ">
+          <p class="m-1">37 East Reach, Taunton, TA1 3ES</p>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navbar Page Links -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-          <!-- Navbar page links -->
-          <div class="navbar-nav mx-auto">
-
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="carnival-procession.html" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                The Procession
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Procession Information</a></li>
-                <li><a class="dropdown-item" href="#">Procession Programmes</a></li>
-                <li><a class="dropdown-item" href="#">Procession Results</a></li>
-                <li><a class="dropdown-item" href="#">Judging</a></li>
-                <li><a class="dropdown-item" href="#">S.C.G.F.C.A Entry Forms</a></li>
-                <li><a class="dropdown-item" href="#">Carnival History</a></li>
-              </ul>
-            </div>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="carnival-concerts.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Concerts
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Concert Information</a></li>
-                <li><a class="dropdown-item" href="#">Concert Programmes</a></li>
-                <li><a class="dropdown-item" href="#">Concert Results</a></li>
-                <li><a class="dropdown-item" href="#">Auditions</a></li>
-              </ul>
-            </div>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Information
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">FAQ's</a></li>
-                <li><a class="dropdown-item" href="#">Parking & Travel</a></li>
-                <li><a class="dropdown-item" href="news.html">News</a></li>
-                <li><a class="dropdown-item" href="#">Maps</a></li>
-                <li><a class="dropdown-item" href="#">Dates</a></li>
-                <li><a class="dropdown-item" href="#">Corporate Hospitality</a></li>
-                <li><a class="dropdown-item" href="#">Accomodation</a></li>
-              </ul>
-            </div>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Contact
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                <li><a class="dropdown-item" href="#">Committie Officers</a></li>
-                <li><a class="dropdown-item" href="#">Carnival Centre</a></li>
-                <li><a class="dropdown-item" href="#">Friends of the Carnival</a></li>
-                <li><a class="dropdown-item" href="#">County Carnivals</a></li>
-              </ul>
-            </div>
-
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Shop
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Concert Tickets</a></li>
-                <li><a class="dropdown-item" href="#">Procession Grandstand Seats</a></li>
-                <li><a class="dropdown-item" href="#">DVDs</a></li>
-                <li><a class="dropdown-item" href="#">Processions Videos</a></li>
-                <li><a class="dropdown-item" href="#">Merchendise</a></li>
-                <li><a class="dropdown-item" href="#">Parking</a></li>
-              </ul>
-            </div>
-
+          <div class="navbar-nav">
+            <a class="nav-link nav-item active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link nav-item px-3" href="services.html">Services</a>
+            <a class="nav-link px-3" href="productRanges.html">Product Ranges</a>
+            <a class="nav-link px-3" href="recentInstallations.html">Recent Installations</a>
+            <a class="nav-link px-3" href="about.html">About Us</a>
+            <a class="nav-link px-3" href="contact.html">Contact</a>
           </div>
-
-          <!-- Navbar buttons buttons -->
-          <div class="d-flex gap-2">
-            <a href="https://www.paypal.com/donate?token=2zbA9jvcttamK6ufMYhxJ6Y6SWCj2P8kLkrHx1Iz0GcXwh4I0Lf0fX6O4iVCmKVgTfSh7ArI7IIRX5-b"
-              class="btn btn-outline-primary">Donate</a>
-            <a href="basket.html" class="btn btn-primary">Basket</a>
+          <button class="ms-auto mb- rounded-0 btn btn-danger px-4" onclick="window.location.href = 'contact.html';"
+            role="button">Request a Quote</button>
+          <div class="button1 d-flex d-sm-none d-md-none ms-auto flex-wrap justify-content-center mt-5 mb-2"><button
+              type="button" class="btn btn-dark rounded-0" id="darkButton" onclick="changeCSS()">Dark Mode</button>
           </div>
         </div>
       </div>
     </nav>
   </div>
 
-  <!-- Announcement bar -->
-  <div class="section-background-blue text-white">
-    <div class="container py-2 text-center">
-      <small class="fw-semibold text-uppercase">
-        You could put a nice announcement here! (e.g. "Grandstand seats on sale on 12th March 2026")
-      </small>
-    </div>
-  </div>
-
   <!-- Main content starts here -->
 
-  <!-- Introduction / Hero section -->
-  <!-- Introduction / Hero section (full-width like the screenshot) -->
-  <section class="hero position-relative overflow-hidden text-white">
-
-    <!-- Background carousel -->
-    <div id="homeCarousel" class="carousel slide carousel-fade hero-bg" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner h-100">
-        <div class="carousel-item active h-100">
-          <img src="assets/images/2Ramblers2025.jpg" class="d-block w-100 h-100 object-fit-cover"
-            alt="1912: All Out - Ramblers Carnival Club">
-        </div>
-        <div class="carousel-item h-100">
-          <img src="assets/images/Gremlins2025.jpg" class="d-block w-100 h-100 object-fit-cover"
-            alt="Morning of the Dragon - Gremlins Carnival Club">
-        </div>
-        <div class="carousel-item h-100">
-          <img src="assets/images/LimeKiln2025.jpg" class="d-block w-100 h-100 object-fit-cover"
-            alt="Dia De los Muertos - Lime Kiln Carnival Club">
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!-- Hero content -->
-    <div class="container position-relative hero-content">
-      <div class="row align-items-center">
-        <div class="col-lg-6 py-5">
-
-          <p class="text-uppercase fw-semibold small mb-2 ">
-            Bridgwater Guy Fawkes Carnival
-          </p>
-
-          <h1 class="display-1 fw-semibold mb-2">
-            Seeing is believing
-          </h1>
-
-          <p class="lead mb-4 opacity-90">
-            Bridgwater Guy Fawkes Carnival is the UK's oldest carnival and one of the largest illuminated
-            processions in Europe.
-          </p>
-
-          <div class="d-flex flex-wrap gap-2">
-            <a href="procession-information.html" class="btn btn-light btn-lg px-4">
-              Learn More
-            </a>
-            <a href="galleries.html" class="btn btn-outline-light btn-lg px-4">
-              Gallery
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Angled white bottom like the screenshot -->
-    <div class="hero-angle"></div>
-  </section>
+  <!-- Masthead section -->
 
   <!-- Quick Links -->
   <section class="py-5 bg-light">

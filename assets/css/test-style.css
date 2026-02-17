@@ -2,116 +2,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Standard font for text */
+/* Font styles */
 body {
-    font-family: 'Roboto', 'Roboto', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f8f9fa;
 }
 
-/* Font for headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', 'Roboto Condensed', sans-serif;
+p {
+  font-family: 'Jost', sans-serif;
+  font-size: 17px;
 }
 
-/* BOOTSTRAP OVERRIDE STYLES */
-/* Root (updates text etc.) */
+/* Root (updates text from bootstrap etc.) */
 :root {
-  --bs-primary: rgb(0, 93, 165);
-  --bs-primary-rgb: 0, 93, 165;
+  --bs-primary: #b22527 !important; 
+  --bs-primary-rgb: 178, 37, 39 !important;
 }
 
 /* Button styles */
 .btn-primary {
-  --bs-btn-bg: rgb(0, 93, 165);
-  --bs-btn-border-color: rgb(0, 93, 165);
-  --bs-btn-hover-bg: rgb(0, 70, 125);
-  --bs-btn-hover-border-color: rgb(0, 70, 125);
+  --bs-btn-bg: #b22527;
+  --bs-btn-border-color: #ce9596;
+  --bs-btn-hover-bg: #A51E1E;
+  --bs-btn-hover-border-color: #A51E1E; 
+
 }
 
 .btn-outline-primary {
-  --bs-btn-color: rgb(0, 93, 165);
-  --bs-btn-border-color: rgb(0, 93, 165);
-  --bs-btn-hover-bg: rgb(0, 93, 165);
-  --bs-btn-hover-border-color: rgb(0, 93, 165);
+  --bs-btn-color: #b22527;
+  --bs-btn-border-color: #b22527;
+  --bs-btn-hover-bg: #b22527;
+  --bs-btn-hover-border-color: #b22527;
   --bs-btn-hover-color: #fff;
 }
 
-/* GENERAL PAGE STYLES */
-/* Page styles */
-.section-background-offwhite {
-    background: rgb(226, 233, 235);
+.bg-whitered {
+  background-color: #fbf4f4;
 }
 
-.section-background-blue {
-    background: rgb(0, 93, 165);
+
+/* Hero masthead styles */
+.masthead {
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
-.section-background-grey {
-    background: rgb(242, 242, 242);
-}
-
-/* TESTING STYLES */
-/* Hero basics */
-.hero {
-  min-height: 93vh; /* tweak to 80-90vh if you want it taller */
-}
-
-/* Make the carousel fill the hero */
-.hero-bg {
+.masthead-video {
   position: absolute;
-  inset: 0;
-}
-
-/* Dark gradient overlay (text stays readable) */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.35) 45%,
-    rgba(0, 0, 0, 0.10) 100%
-  );
-}
-
-/* Ensure hero content sits above overlay */
-.hero-content {
-  z-index: 2;
-}
-
-/* Angled white bottom edge */
-.hero-angle {
-  position: absolute;
-  left: 0;
-  bottom: -60px;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: 120px;
-  background: #fff;
-  transform: skewY(-3deg);
-  transform-origin: left top;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.masthead-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
-.header {
-    padding: 30px;
-    text-align: center;
-    background: #FBFBF8;
-    color: black;
-    font-size: 30px;
-  }
-
-.header-right {
-    float: right;
-  }
-
-.header1 {
-  display: table;
+.masthead-content {
+  position: relative;
+  z-index: 3;
 }
 
-.header2 {
-  display: table-cell;
-  vertical-align: middle;
+@media (max-width: 768px) {
+  .masthead {
+    min-height: 30vh;
+  }
 }
-
-
-
-
