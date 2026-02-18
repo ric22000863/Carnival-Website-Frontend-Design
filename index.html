@@ -27,15 +27,53 @@
 </head>
 
 <body>
+    <div class="container">
+        <header class="row align-items-center py-3">
+
+            <!-- Logo and title -->
+            <div class="col">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="assets/images/NavTest8.webp" height="80" alt="Bridgwater Guy Fawkes Carnival Logo">
+                </a>
+            </div>
+
+            <!-- Desktop date -->
+            <div class="col-auto d-none d-xl-flex align-items-center gap-2 border-end">
+                <i class="bi bi-calendar-event fs-3 text-primary"></i>
+                <span>
+                    Saturday 27th November 2026
+                </span>
+            </div>
+
+
+            <!-- Desktop social media links -->
+            <div class="col-auto d-none d-xl-flex align-items-center">
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-facebook fs-3"></i></a>
+
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-twitter fs-3"></i></a>
+
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-youtube fs-3"></i></a>
+
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-instagram fs-3"></i></a>
+
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-tiktok fs-3"></i></a>
+            </div>
+
+        </header>
+
+        <div class="border-bottom"></div>
+    </div>
+
     <!-- Navbar -->
     <div class="container">
-        <nav class="navbar navbar-expand-xl py-2 align-items-center">
+        <nav class="navbar navbar-expand-xl py-3 align-items-center">
             <div class="container-fluid">
 
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/NavTest8.webp" alt="Bootstrap" height="80">
-                </a>
+                <!-- Mobile date -->
+                <div class="d-flex d-xl-none align-items-center gap-2">
+                    <i class="bi bi-calendar-event fs-5 text-primary"></i>
+                    <span>Saturday 27th November 2026</span>
+                </div>
 
                 <!-- Mobile toggler -->
                 <button class="navbar-toggler rounded-0 border-0 ms-auto" type="button" data-bs-toggle="collapse"
@@ -43,19 +81,21 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse align-items-center" id="navbarNavAltMarkup">
 
                     <!-- Nav links -->
-                    <ul class="navbar-nav gap-1 mx-auto">
+                    <ul class="navbar-nav gap-2">
+
+                        <!-- Home -->
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
 
                         <!-- Carnival day -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 Carnival Day
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">Procession Information</a></li>
                                 <li><a class="dropdown-item" href="#">Entertainment</a></li>
                                 <li><a class="dropdown-item" href="#">Procession Programmes</a></li>
@@ -68,10 +108,10 @@
                         <!-- Concerts -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 Carnival Concerts
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">Concert Information</a></li>
                                 <li><a class="dropdown-item" href="#">Concert Programmes</a></li>
                                 <li><a class="dropdown-item" href="#">Concert Results</a></li>
@@ -82,27 +122,27 @@
                         <!-- Information -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 Information
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">FAQ's</a></li>
                                 <li><a class="dropdown-item" href="#">Parking & Travel</a></li>
                                 <li><a class="dropdown-item" href="news.html">News</a></li>
                                 <li><a class="dropdown-item" href="#">Maps</a></li>
                                 <li><a class="dropdown-item" href="#">Dates</a></li>
                                 <li><a class="dropdown-item" href="#">Corporate Hospitality</a></li>
-                                <li><a class="dropdown-item" href="#">Accommodation</a></li>
+                                <li><a class="dropdown-item" href="#">Accomodation</a></li>
                             </ul>
                         </li>
 
                         <!-- History -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 History
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">History</a></li>
                                 <li><a class="dropdown-item" href="#">Previous Years</a></li>
                                 <li><a class="dropdown-item" href="#">Cups</a></li>
@@ -112,12 +152,12 @@
                         <!-- Contact -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 Contact
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="#">Committee Officers</a></li>
+                                <li><a class="dropdown-item" href="#">Committie Officers</a></li>
                                 <li><a class="dropdown-item" href="#">Carnival Centre</a></li>
                                 <li><a class="dropdown-item" href="#">Friends of the Carnival</a></li>
                                 <li><a class="dropdown-item" href="#">County Carnivals</a></li>
@@ -127,15 +167,15 @@
                         <!-- Shop -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" aria-haspopup="true">
+                                aria-expanded="false">
                                 Shop
                             </a>
-                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
                                 <li><a class="dropdown-item" href="#">Concert Tickets</a></li>
                                 <li><a class="dropdown-item" href="#">Procession Grandstand Seats</a></li>
                                 <li><a class="dropdown-item" href="#">DVDs</a></li>
-                                <li><a class="dropdown-item" href="#">Procession Videos</a></li>
-                                <li><a class="dropdown-item" href="#">Merchandise</a></li>
+                                <li><a class="dropdown-item" href="#">Processions Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Merchendise</a></li>
                                 <li><a class="dropdown-item" href="#">Parking</a></li>
                             </ul>
                         </li>
@@ -143,7 +183,7 @@
                     </ul>
 
                     <!-- Nav buttons -->
-                    <div class="d-flex gap-2 ms-xl-3 mt-3 mt-xl-0">
+                    <div class="gap-2 ms-auto">
                         <a href="contact.html" class="btn btn-primary rounded-0 px-4 py-2">
                             Basket
                         </a>

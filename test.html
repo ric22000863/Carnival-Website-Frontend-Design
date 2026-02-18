@@ -27,135 +27,175 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<div class="container">
-    <nav class="navbar navbar-expand-xl py-2 align-items-center">
-        <div class="container-fluid">
+    <div class="container">
+        <header class="row align-items-center py-3">
 
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/NavTest8.webp" alt="Bootstrap" height="80">
-            </a>
+            <!-- Logo and title -->
+            <div class="col">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="assets/images/NavTest8.webp" height="80" alt="Bridgwater Guy Fawkes Carnival Logo">
+                </a>
+            </div>
 
-            <!-- Mobile toggler -->
-            <button class="navbar-toggler rounded-0 border-0 ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <!-- Desktop date -->
+            <div class="col-auto d-none d-xl-flex align-items-center gap-2 border-end">
+                <i class="bi bi-calendar-event fs-3 text-primary"></i>
+                <span>
+                    Saturday 27th November 2026
+                </span>
+            </div>
 
-            <div class="collapse navbar-collapse align-items-center" id="navbarNavAltMarkup">
 
-                <!-- Nav links -->
-                <ul class="navbar-nav gap-1 mx-auto">
+            <!-- Desktop social media links -->
+            <div class="col-auto d-none d-xl-flex align-items-center">
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-facebook fs-3"></i></a>
 
-                    <!-- Carnival day -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            Carnival Day
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">Procession Information</a></li>
-                            <li><a class="dropdown-item" href="#">Entertainment</a></li>
-                            <li><a class="dropdown-item" href="#">Procession Programmes</a></li>
-                            <li><a class="dropdown-item" href="#">Procession Results</a></li>
-                            <li><a class="dropdown-item" href="#">Judging</a></li>
-                            <li><a class="dropdown-item" href="#">S.C.G.F.C.A Entry Forms</a></li>
-                        </ul>
-                    </li>
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-twitter fs-3"></i></a>
 
-                    <!-- Concerts -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            Carnival Concerts
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">Concert Information</a></li>
-                            <li><a class="dropdown-item" href="#">Concert Programmes</a></li>
-                            <li><a class="dropdown-item" href="#">Concert Results</a></li>
-                            <li><a class="dropdown-item" href="#">Auditions</a></li>
-                        </ul>
-                    </li>
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-youtube fs-3"></i></a>
 
-                    <!-- Information -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            Information
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">FAQ's</a></li>
-                            <li><a class="dropdown-item" href="#">Parking & Travel</a></li>
-                            <li><a class="dropdown-item" href="news.html">News</a></li>
-                            <li><a class="dropdown-item" href="#">Maps</a></li>
-                            <li><a class="dropdown-item" href="#">Dates</a></li>
-                            <li><a class="dropdown-item" href="#">Corporate Hospitality</a></li>
-                            <li><a class="dropdown-item" href="#">Accommodation</a></li>
-                        </ul>
-                    </li>
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-instagram fs-3"></i></a>
 
-                    <!-- History -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            History
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">History</a></li>
-                            <li><a class="dropdown-item" href="#">Previous Years</a></li>
-                            <li><a class="dropdown-item" href="#">Cups</a></li>
-                        </ul>
-                    </li>
+                <a class="btn btn-outline-primary border-0" href=""><i class="bi bi-tiktok fs-3"></i></a>
+            </div>
 
-                    <!-- Contact -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                            <li><a class="dropdown-item" href="#">Committee Officers</a></li>
-                            <li><a class="dropdown-item" href="#">Carnival Centre</a></li>
-                            <li><a class="dropdown-item" href="#">Friends of the Carnival</a></li>
-                            <li><a class="dropdown-item" href="#">County Carnivals</a></li>
-                        </ul>
-                    </li>
+        </header>
 
-                    <!-- Shop -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" aria-haspopup="true">
-                            Shop
-                        </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm mt-xl-2">
-                            <li><a class="dropdown-item" href="#">Concert Tickets</a></li>
-                            <li><a class="dropdown-item" href="#">Procession Grandstand Seats</a></li>
-                            <li><a class="dropdown-item" href="#">DVDs</a></li>
-                            <li><a class="dropdown-item" href="#">Procession Videos</a></li>
-                            <li><a class="dropdown-item" href="#">Merchandise</a></li>
-                            <li><a class="dropdown-item" href="#">Parking</a></li>
-                        </ul>
-                    </li>
+        <div class="border-bottom"></div>
+    </div>
 
-                </ul>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-xl py-3 align-items-center">
+            <div class="container-fluid">
 
-                <!-- Nav buttons -->
-                <div class="d-flex gap-2 ms-xl-3 mt-3 mt-xl-0">
-                    <a href="contact.html" class="btn btn-primary rounded-0 px-4 py-2">
-                        Basket
-                    </a>
-                    <a href="contact.html" class="btn btn-outline-primary rounded-0 px-4 py-2">
-                        Donate
-                    </a>
+                <!-- Mobile date -->
+                <div class="d-flex d-xl-none align-items-center gap-2">
+                    <i class="bi bi-calendar-event fs-5 text-primary"></i>
+                    <span>Saturday 27th November 2026</span>
                 </div>
 
+                <!-- Mobile toggler -->
+                <button class="navbar-toggler rounded-0 border-0 ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="navbarNavAltMarkup">
+
+                    <!-- Nav links -->
+                    <ul class="navbar-nav gap-2">
+
+                        <!-- Home -->
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+                        <!-- Carnival day -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Carnival Day
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Procession Information</a></li>
+                                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                                <li><a class="dropdown-item" href="#">Procession Programmes</a></li>
+                                <li><a class="dropdown-item" href="#">Procession Results</a></li>
+                                <li><a class="dropdown-item" href="#">Judging</a></li>
+                                <li><a class="dropdown-item" href="#">S.C.G.F.C.A Entry Forms</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Concerts -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Carnival Concerts
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Concert Information</a></li>
+                                <li><a class="dropdown-item" href="#">Concert Programmes</a></li>
+                                <li><a class="dropdown-item" href="#">Concert Results</a></li>
+                                <li><a class="dropdown-item" href="#">Auditions</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Information -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Information
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                                <li><a class="dropdown-item" href="#">Parking & Travel</a></li>
+                                <li><a class="dropdown-item" href="news.html">News</a></li>
+                                <li><a class="dropdown-item" href="#">Maps</a></li>
+                                <li><a class="dropdown-item" href="#">Dates</a></li>
+                                <li><a class="dropdown-item" href="#">Corporate Hospitality</a></li>
+                                <li><a class="dropdown-item" href="#">Accomodation</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- History -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                History
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li><a class="dropdown-item" href="#">Previous Years</a></li>
+                                <li><a class="dropdown-item" href="#">Cups</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Committie Officers</a></li>
+                                <li><a class="dropdown-item" href="#">Carnival Centre</a></li>
+                                <li><a class="dropdown-item" href="#">Friends of the Carnival</a></li>
+                                <li><a class="dropdown-item" href="#">County Carnivals</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Shop -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu rounded-0 border-0 shadow-sm">
+                                <li><a class="dropdown-item" href="#">Concert Tickets</a></li>
+                                <li><a class="dropdown-item" href="#">Procession Grandstand Seats</a></li>
+                                <li><a class="dropdown-item" href="#">DVDs</a></li>
+                                <li><a class="dropdown-item" href="#">Processions Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Merchendise</a></li>
+                                <li><a class="dropdown-item" href="#">Parking</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <!-- Nav buttons -->
+                    <div class="gap-2 ms-auto">
+                        <a href="contact.html" class="btn btn-primary rounded-0 px-4 py-2">
+                            Basket
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary rounded-0 px-4 py-2">
+                            Donate
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
 
     <!-- Hero masthead -->
     <section class="masthead">
